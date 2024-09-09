@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./public/styles.css">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="submitForm(event)">
+            <h2>Boletín Informativo</h2>
+            <div class="row">
+                <div class="col">
+                    <label for="user">Usuario</label>
+                    <input id="user" type="text" placeholder="@Examp_le">
+                </div>
+                <div class="col">
+                    <label for="contra">Contraseña</label>
+                    <input id="contra" type="password" maxlength="10" placeholder="*********">
+                </div>
+            </div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="example123@example.com">
+            <div class="row">
+                <div class="col">
+                    <label for="direccion">Dirección</label>
+                    <input id="direccion" type="text" placeholder="Calle N° - Localidad">
+                </div>
+                <div class="col">
+                    <label for="telefono">Numero de Teléfono</label>
+                    <input id="telefono" type="number" placeholder="299xxxxxxx">
+                </div>
+            </div>
+            <label for="info">Temas de interés</label>
+            <select name="info" id="info">
+                <option value="0" selected disabled>Tema Principal</option>
+                <hr>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="./public/main.js"></script>
+</body>
+</html>
